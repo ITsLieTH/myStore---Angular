@@ -1,0 +1,30 @@
+<div class="cart">
+  <h1>Shopping Cart</h1>
+
+  @if (cartService.cartItems.length === 0) {
+    <div class="empty-cart">
+      <p>Your cart is empty!</p>
+      <a routerLink="/">Continue Shopping</a>
+    </div>
+  }
+
+  @if (cartService.cartItems.length > 0) {
+    <div class="cart-items">
+      @for (item of cartService.cartItems; track item.id) {
+        <div class="cart-item">
+          <div class="item-info">
+            <h3>{{ item.name }}</h3>
+            <p class="item-price">${{ item.price }} × {{ item.quantity }}</p>
+            <p class="item-subtotal">Subtotal: ${{ item.price * item.quantity }}</p>
+          </div>
+          <button (click)="removeFromCart(item)">Remove</button>
+        </div>
+      }
+    </div>
+
+    <div class="cart-footer">
+      <h2>Total: ${{ cartService.getTotal() }}</h2>
+      <a routerLink="/checkout">Proceed to Checkout</a>
+    </div>
+  }
+</div>

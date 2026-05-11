@@ -1,0 +1,7 @@
+@if (product) {
+  <div class="product-container">
+    <h2>{{ product.name }}</h2>
+    <p class="price">{{ product.price }} $</p>
+    <button (click)="addToCart()">Add to Cart</button>
+  </div>
+}

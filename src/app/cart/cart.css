@@ -1,0 +1,128 @@
+.cart {
+  padding: 40px 32px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cart h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #f0f0f0;
+}
+
+.empty-cart {
+  text-align: center;
+  padding: 48px;
+  background-color: #1a1a1a;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+}
+
+.empty-cart p {
+  color: #888;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.empty-cart a {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #a78bfa;
+  color: #0f0f0f;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.empty-cart a:hover {
+  background-color: #c4b5fd;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+  padding: 20px 24px;
+  transition: border-color 0.2s;
+}
+
+.cart-item:hover {
+  border-color: #a78bfa;
+}
+
+.item-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-bottom: 6px;
+}
+
+.item-price {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.item-subtotal {
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+.cart-item button {
+  padding: 8px 18px;
+  background-color: #3f0f0f;
+  color: #f87171;
+  border: 1px solid #7f1d1d;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.cart-item button:hover {
+  background-color: #7f1d1d;
+  color: white;
+}
+
+.cart-footer {
+  background-color: #1a1a1a;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-footer h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f0f0f0;
+}
+
+.cart-footer a {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #a78bfa;
+  color: #0f0f0f;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.cart-footer a:hover {
+  background-color: #c4b5fd;
+}

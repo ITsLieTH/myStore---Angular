@@ -1,0 +1,40 @@
+.product-container {
+  padding: 48px 32px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.product-container h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #f0f0f0;
+}
+
+.price {
+  color: #a78bfa;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+button {
+  padding: 12px 32px;
+  background-color: #a78bfa;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #c4b5fd;
+}

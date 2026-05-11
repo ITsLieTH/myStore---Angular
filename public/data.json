@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Headphones", "price": 99.99, "description": "High quality wireless headphones.", "url": "/headphones.png", "quantity": 0 },
+  { "id": 2, "name": "Keyboard", "price": 49.99, "description": "Mechanical keyboard with RGB lighting.", "url": "/keyboard.png", "quantity": 0 },
+  { "id": 3, "name": "Mouse", "price": 29.99, "description": "Ergonomic wireless mouse.", "url": "/mouse.png", "quantity": 0 },
+  { "id": 4, "name": "Monitor", "price": 299.99, "description": "4K ultra-wide monitor.", "url": "/monitor.png", "quantity": 0 },
+  { "id": 5, "name": "Webcam", "price": 79.99, "description": "1080p HD webcam.", "url": "/webcam.png", "quantity": 0 }
+]

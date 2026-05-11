@@ -1,0 +1,13 @@
+<div class="product-list">
+  <h1>Products</h1>
+  <div class="products">
+    @for (product of products; track product.id) {
+      <div class="product-card">
+        <img [src]="product.url" [alt]="product.name" [title]="product.name" role="presentation">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.price }} $</p>
+        <a [routerLink]="['/product', product.id]">View Details</a>
+      </div>
+    }
+  </div>
+</div>
