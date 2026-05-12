@@ -47,12 +47,13 @@
         required
         minlength="16"
         maxlength="16"
+        pattern="[0-9]*"
         placeholder="Enter 16-digit card number"
         title="Credit Card Number"
         #cardInput="ngModel"
       />
       @if (cardInput.invalid && cardInput.touched) {
-        <p class="error">Enter a valid 16-digit card number.</p>
+        <p class="error">Enter a valid 16-digit number (numbers only).</p>
       }
     </div>
 

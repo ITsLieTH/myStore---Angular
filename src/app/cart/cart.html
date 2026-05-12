@@ -1,6 +1,10 @@
 <div class="cart">
   <h1>Shopping Cart</h1>
 
+  @if (removedMessage) {
+    <p class="removed-message">{{ removedMessage }}</p>
+  }
+
   @if (cartService.cartItems.length === 0) {
     <div class="empty-cart">
       <p>Your cart is empty!</p>

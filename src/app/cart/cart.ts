@@ -12,9 +12,13 @@ import { CartItem } from '../cart-item/cart-item';
 })
 
 export class Cart {
+  removedMessage: string = '';
+
   constructor(public cartService: CartService) {}
 
   removeFromCart(product: Product): void {
     this.cartService.removeFromCart(product);
+    this.removedMessage = product.name + ' removed from cart!';
+    setTimeout(() => this.removedMessage = '', 3000);
   }
 }
