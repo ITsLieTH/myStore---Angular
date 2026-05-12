@@ -1,7 +1,10 @@
 @if (product) {
   <div class="product-container">
+    <img [src]="product.url" [alt]="product.name" [title]="product.name">
+    <p class="product-id">Product ID: {{ product.id }}</p>
     <h2>{{ product.name }}</h2>
     <p class="price">{{ product.price }} $</p>
+    <p class="description">{{ product.description }}</p>
     <button (click)="addToCart()">Add to Cart</button>
   </div>
 }
