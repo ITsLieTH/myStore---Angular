@@ -7,6 +7,7 @@
       <input
         type="text"
         [(ngModel)]="name"
+        (ngModelChange)="onNameChange($event)"
         name="name"
         required
         minlength="3"
@@ -24,6 +25,7 @@
       <input
         type="text"
         [(ngModel)]="address"
+        (ngModelChange)="onAddressChange($event)"
         name="address"
         required
         placeholder="Enter your address"
@@ -40,6 +42,7 @@
       <input
         type="text"
         [(ngModel)]="creditCard"
+        (ngModelChange)="onCreditCardChange($event)"
         name="creditCard"
         required
         minlength="16"

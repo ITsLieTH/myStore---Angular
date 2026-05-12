@@ -24,4 +24,16 @@ export class Checkout {
     this.cartService.clearCart();
     this.router.navigate(['/confirmation']);
   }
+
+  onNameChange(value: string): void {
+    this.name = value;
+  }
+
+  onAddressChange(value: string): void {
+    this.address = value;
+  }
+
+  onCreditCardChange(value: string): void {
+    this.creditCard = value;
+  }
 }
